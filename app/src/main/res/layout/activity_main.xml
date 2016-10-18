@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zta.uploadfiletoserverdemo.MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/frame_layout"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:layout_height="wrap_content"
+            tools:src="@drawable/chevrolet_camaro"
+            android:id="@+id/select_file_image_view"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_width="400dp"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/selected_file_path_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/colorPrimary"
+            android:text="Select File Path: "
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+    </FrameLayout>
+
+
+    <Button
+        android:text="@string/select_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_file_button"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/frame_layout"
+        android:layout_margin="16dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/button_selector"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:text="@string/upload_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upload_file_button"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/select_file_button"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/button_selector"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/select_file_button" />
+
+
+</RelativeLayout>

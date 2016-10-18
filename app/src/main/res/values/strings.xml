@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UploadFileToServerDemo</string>
+    <string name="select_file">Select File</string>
+    <string name="upload_file">Upload File</string>
+</resources>
